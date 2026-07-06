@@ -40,8 +40,8 @@ public class Reservation {
 
         if(status != ReservationStatus.PENDING)
             throw new IllegalArgumentException("the reservation must be pending,if you want to expire");
-        
         this.status = ReservationStatus.EXPIRED;
+
     }
 
 
